@@ -1,0 +1,544 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPYwD+kzLvUDeYt/hLpOzTb",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Dias-Davi04/Python/blob/Senai---banco-e-caixa-eletr%C3%B4nico/Aula_2%20-%20Banco%20e%20caixa%20eletr%C3%B4nico\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eAdlrNer-HC0",
+        "outputId": "0056af5e-3910-4501-9712-7d69d3734fc7"
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "1"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 1
+        }
+      ],
+      "source": [
+        "1 % 4\n",
+        "4 % 4\n",
+        "5 % 4"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 1\n",
+        "y = 2\n",
+        "z = x\n",
+        "x = y\n",
+        "y = z\n",
+        "print(x, y)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SS2aoZ8PKaTR",
+        "outputId": "951763c7-ccc6-4b1e-c2ca-c621c70f03c1"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2 1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "z = y = x = 1\n",
+        "print(x, y, z, sep='*')\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "laEp4VqxL6S5",
+        "outputId": "95707afd-1409-4652-a742-4c89b8e8d347"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1*1*1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "y = 2 + 3 * 5.\n",
+        "print(y)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "i5NV11oCL_Si",
+        "outputId": "adfcecab-63b0-4f54-a870-dde900b3c73b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "17.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "idade = 20\n",
+        "\n",
+        "if idade == 18:\n",
+        "  print(\"cesso liberado\")\n",
+        "elif idade > 18 and idade <=20:\n",
+        "  print(\"ok\")\n",
+        "else:\n",
+        "  print(\"ACESSO NEGADO\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "p8CPImo0WGx5",
+        "outputId": "1b79809c-8c23-43d7-edf4-9292e8fe0122"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ok\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# CALCULADORA\n",
+        "\n",
+        "N1 = int(input( \"insira o primeiro numero\" ))\n",
+        "OPERAÇÃO = input ( \"insira a operção\")\n",
+        "N2 = int(input( \"insira o segundo numero\"))\n",
+        "\n",
+        "if OPERAÇÃO == '*':\n",
+        "   RESULTADO = N1*N2\n",
+        "elif OPERAÇÃO == '+':\n",
+        "  RESULTADO = N1+N2\n",
+        "elif OPERAÇÃO == '-':\n",
+        "  RESULTADO = N1-N2\n",
+        "\n",
+        "\n",
+        "else:\n",
+        "    RESULTADO = 'erro'\n",
+        "\n",
+        "print(RESULTADO)\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8YH1Z3s8gigS",
+        "outputId": "f5a6e491-fcef-4a37-c700-975635f63232"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "insira o primeiro numero1\n",
+            "insira a operção+\n",
+            "insira o segundo numero1\n",
+            "2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "N1 = int(input(\"insira o primeiro numero\" ))\n",
+        "OPERACAO = input (\"insira a operção\")\n",
+        "N2 = int(input(\"insira o segundo numero\"))\n",
+        "\n",
+        "\n",
+        "if OPERACAO == '*':\n",
+        "    RESULTADO = N1 * N2\n",
+        "elif OPERACAO == '+':\n",
+        "    RESULTADO = N1 + N2\n",
+        "elif OPERACAO == '-':\n",
+        "    RESULTADO = N1 - N2\n",
+        "elif OPERACAO == '/':\n",
+        "    RESULTADO = N1/N2\n",
+        "elif OPERACAO == '**':\n",
+        "    RESULTADO == N1**N2\n",
+        "else:\n",
+        "    RESULTADO = 'Operação inválida'\n",
+        "\n",
+        "print(\"O RESULTADO É:\", RESULTADO)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "J_OMUMXOwzHi",
+        "outputId": "472b8545-8d1c-45ba-c5b8-bb83c592cb89"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "insira o primeiro numero13\n",
+            "insira a operçãoG\n",
+            "insira o segundo numero12\n",
+            "O RESULTADO É: Operação inválida\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#========== BANCO PYTHON ==========\n",
+        "\n",
+        "print(\"1 = Depósito\")\n",
+        "print(\"2 = Saque\")\n",
+        "print(\"3 = Extrato\")\n",
+        "print(\"4 = Sair\")\n",
+        "\n",
+        "opcao = int(input(\"Insira a opção desejada: \"))\n",
+        "if opcao == 1:\n",
+        "  valor = float(input(\"Insira o valor do depósito: R$ \"))\n",
+        "  if valor > 0:\n",
+        "        print(f\"Depósito de R$ {valor:.2f} realizado com sucesso!\")\n",
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WKoEfzxFb3Gs",
+        "outputId": "765dc940-2aee-40bd-8878-2d6e7309b591"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1 = Depósito\n",
+            "2 = Saque\n",
+            "3 = Extrato\n",
+            "4 = Sair\n",
+            "Insira a opção desejada: 1\n",
+            "Insira o valor do depósito: R$ 500\n",
+            "Depósito de R$ 500.00 realizado com sucesso!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "saldo = 0.0  # Saldo inicial\n",
+        "\n",
+        "print(\"1 = Depósito\")\n",
+        "print(\"2 = Saque\")\n",
+        "print(\"3 = Sair\")\n",
+        "\n",
+        "opcao = int(input(\"Insira a opção desejada: \"))\n",
+        "\n",
+        "if opcao == 1:\n",
+        "    valor = float(input(\"Insira o valor do depósito: R$ \"))\n",
+        "    if valor > 0:\n",
+        "        saldo += valor\n",
+        "        print(f\"Depósito de R$ {valor:.2f} realizado com sucesso!\")\n",
+        "        print(f\"Saldo atual: R$ {saldo:.2f}\")\n",
+        "    else:\n",
+        "        print(\" Valor de depósito inválido.\")\n",
+        "\n",
+        "elif opcao == 2:\n",
+        "    valor = float(input(\"Insira o valor do saque: R$ \"))\n",
+        "    if valor <= 0:\n",
+        "        print(\" Valor inválido.\")\n",
+        "    elif valor > saldo:\n",
+        "        print(\" Saldo insuficiente.\")\n",
+        "    else:\n",
+        "        saldo -= valor\n",
+        "        print(f\"Saque de R$ {valor:.2f} realizado com sucesso!\")\n",
+        "        print(f\"Saldo atual: R$ {saldo:.2f}\")\n",
+        "\n",
+        "elif opcao == 3:\n",
+        "    print(\"Encerrando o programa. Até logo!\")\n",
+        "\n",
+        "else:\n",
+        "    print(\" Opção inválida.\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PyRBGeOjD46u",
+        "outputId": "c1106585-6358-41de-b495-055c33d7eba0"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1 = Depósito\n",
+            "2 = Saque\n",
+            "3 = Sair\n",
+            "Insira a opção desejada: 1\n",
+            "Insira o valor do depósito: R$ 500\n",
+            "Depósito de R$ 500.00 realizado com sucesso!\n",
+            "Saldo atual: R$ 500.00\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "saldo = 0.0\n",
+        "extrato = \"Aqui esta seu extrato\"\n",
+        "\n",
+        "print(\"===== BANCO PYTHON =====\")\n",
+        "print(\"1 = Depósito\")\n",
+        "print(\"2 = Saque\")\n",
+        "print(\"3 = Extrato\")\n",
+        "print(\"4 = Sair\")\n",
+        "\n",
+        "opcao = int(input(\"Insira a opção desejada: \"))\n",
+        "\n",
+        "if opcao == 1:\n",
+        "    valor = float(input(\"Insira o valor do depósito: R$ \"))\n",
+        "    if valor > 0:\n",
+        "        saldo += valor\n",
+        "        extrato += f\"Depósito: R$ {valor:.2f}\\n\"\n",
+        "        print(f\"Depósito de R$ {valor:.2f} realizado com sucesso!\")\n",
+        "    else:\n",
+        "        print(\"Valor de depósito inválido.\")\n",
+        "\n",
+        "elif opcao == 2:\n",
+        "    valor = float(input(\"Insira o valor do saque: R$ \"))\n",
+        "    if valor <= 0:\n",
+        "        print(\"Valor inválido.\")\n",
+        "    elif valor > saldo:\n",
+        "        print(\"Saldo insuficiente.\")\n",
+        "    else:\n",
+        "        saldo -= valor\n",
+        "        extrato += f\"Saque:    R$ {valor:.2f}\\n\"\n",
+        "        print(f\"Saque de R$ {valor:.2f} realizado com sucesso!\")\n",
+        "\n",
+        "elif opcao == 3:\n",
+        "    print(\"\\n===== EXTRATO =====\")\n",
+        "    if extrato == \"\":\n",
+        "        print(\"Não foram realizadas movimentações.\")\n",
+        "    else:\n",
+        "        print(extrato)\n",
+        "    print(f\"Saldo atual: R$ {saldo:.2f}\")\n",
+        "\n",
+        "elif opcao == 4:\n",
+        "    print(\"Encerrando o sistema. Até logo!\")\n",
+        "\n",
+        "else:\n",
+        "    print(\"Opção inválida.\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LLE2gZR7Ec2e",
+        "outputId": "9c9598d0-1ad6-4191-bb76-012f8de2bf08"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "===== BANCO PYTHON =====\n",
+            "1 = Depósito\n",
+            "2 = Saque\n",
+            "3 = Extrato\n",
+            "4 = Sair\n",
+            "Insira a opção desejada: 2\n",
+            "Insira o valor do saque: R$ 50\n",
+            "Saldo insuficiente.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#========== BANCO PYTHON ==========\n",
+        "\n",
+        "saldo = 0.0\n",
+        "extrato = \"Aqui está seu extrato\"\n",
+        "\n",
+        "executando = True\n",
+        "\n",
+        "while executando:\n",
+        "    print(\"\\n===== BANCO PYTHON =====\")\n",
+        "    print(\"1 = Depósito\")\n",
+        "    print(\"2 = Saque\")\n",
+        "    print(\"3 = Extrato\")\n",
+        "    print(\"4 = Sair\")\n",
+        "\n",
+        "    opcao = int(input(\"Insira a opção desejada: \"))\n",
+        "\n",
+        "    if opcao == 1:\n",
+        "        valor = float(input(\"Insira o valor do depósito: R$ \"))\n",
+        "        if valor > 0:\n",
+        "            saldo += valor\n",
+        "            extrato += f\"Depósito: R$ {valor:.2f}\\n\"\n",
+        "            print(f\"Depósito de R$ {valor:.2f} realizado com sucesso!\")\n",
+        "        else:\n",
+        "            print(\"Valor de depósito inválido.\")\n",
+        "\n",
+        "    elif opcao == 2:\n",
+        "        valor = float(input(\"Insira o valor do saque: R$ \"))\n",
+        "        if valor <= 0:\n",
+        "            print(\"Valor inválido.\")\n",
+        "        elif valor > saldo:\n",
+        "            print(\"Saldo insuficiente.\")\n",
+        "        else:\n",
+        "            saldo -= valor\n",
+        "            extrato += f\"Saque:    R$ {valor:.2f}\\n\"\n",
+        "            print(f\"Saque de R$ {valor:.2f} realizado com sucesso!\")\n",
+        "\n",
+        "    elif opcao == 3:\n",
+        "        print(\"\\n===== EXTRATO =====\")\n",
+        "        if extrato == \"\":\n",
+        "            print(\"Não foram realizadas movimentações.\")\n",
+        "        else:\n",
+        "            print(extrato)\n",
+        "        print(f\"Seu Saldo atual é de: R$ {saldo:.2f}\")\n",
+        "\n",
+        "    elif opcao == 4:\n",
+        "        print(\"Encerrando o sistema. Até logo!\")\n",
+        "        executando = False\n",
+        "\n",
+        "    else:\n",
+        "        print(\"Opção inválida.\")\n"
+      ],
+      "metadata": {
+        "id": "dr2XYgDrH3AV"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#🔹 Simulador de Caixa Eletrônico 💰\n",
+        "\n",
+        "saldo = 1000.00\n",
+        "\n",
+        "executando = True\n",
+        "\n",
+        "while executando:\n",
+        "    print(\"\\n===== CAIXA ELETRÔNICO PYTHON =====\")\n",
+        "    print(\"\\n MENU \")\n",
+        "    print(\"1 = Depositar\")\n",
+        "    print(\"2 = Sacar\")\n",
+        "    print(\"3 = Sair\")\n",
+        "\n",
+        "    opcao = int(input(\"Insira a opção desejada: \"))\n",
+        "\n",
+        "    if opcao == 1:\n",
+        "        valor = float(input(\"Insira o valor do depósito: R$ \"))\n",
+        "        if valor > 0:\n",
+        "            saldo += valor\n",
+        "            extrato += f\"Depósito: R$ {valor:.2f}\\n\"\n",
+        "            print(f\"Depósito de R$ {valor:.2f} realizado com sucesso!\")\n",
+        "        else:\n",
+        "            print(\"Valor de depósito inválido.\")\n",
+        "\n",
+        "    elif opcao == 2:\n",
+        "        valor = float(input(\"Insira o valor do saque: R$ \"))\n",
+        "        if valor <= 0:\n",
+        "            print(\"Valor inválido.\")\n",
+        "        elif valor > saldo:\n",
+        "            print(\"Saldo insuficiente.\")\n",
+        "        else:\n",
+        "            saldo -= valor\n",
+        "            extrato += f\"Saque:    R$ {valor:.2f}\\n\"\n",
+        "            print(f\"Saque de R$ {valor:.2f} realizado com sucesso!\")\n",
+        "\n",
+        "    elif opcao == 3:\n",
+        "        print(\"Obrigado por usar nosso caixa eletrônico!\")\n",
+        "        executando = False\n",
+        "\n",
+        "    else:\n",
+        "        print(\"Opção inválida.\")"
+      ],
+      "metadata": {
+        "id": "JfSy6LvZKuE0"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
